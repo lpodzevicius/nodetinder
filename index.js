@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.json('Hello')
 })
 
-// Db registration 
+// Db registratio 
 app.post('/signup', async (req, res) => {
     const client = new MongoClient(uri)
     const { username, password } = req.body
